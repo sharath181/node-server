@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 7210;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log("Server is running on " + PORT);
